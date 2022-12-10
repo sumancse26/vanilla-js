@@ -1,0 +1,111 @@
+body,
+p {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--bluish-white);
+}
+#main .content-body {
+	min-width: calc(100% - 30%);
+	max-width: calc(100% - 30%);
+	min-height: calc(100vh - var(--used-height) - 65px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+}
+#main .content-body .dynamic-content {
+	min-width: calc(100% - 75%);
+	/* max-width: calc(100% - 75%); */
+	height: calc(100vh - var(--used-height) - 196px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* background-color: #ffffff; */
+}
+#main .content-body .dynamic-content img {
+	width: 20%;
+	height: 45%;
+	border-radius: 50%;
+}
+#main .content-body .dynamic-content .title {
+	color: var(--blue);
+}
+#main .content-body .dynamic-content .description {
+	text-align: left;
+	font-size: var(--font18);
+	line-break: strict;
+	padding: 0 30px;
+}
+#main .content-body .button-group a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+}
+
+#main .content-body .button-group a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+#main .content-body .button-group .previous {
+	background-color: #f1f1f1;
+	color: black;
+}
+
+#main .content-body .button-group .next {
+	background-color: #04aa6d;
+	color: white;
+}
+
+#main .content-body .button-group .round {
+	border-radius: 50%;
+}
+
+:root {
+	--blue: #026cd1;
+	--black: #000000;
+	--white: #ffffff;
+	--ice-white: #fbfcfe;
+	--bluish-white: #e2edfa;
+	--border-color: #e2edfa;
+	--red: #df2a43;
+	--redish-white: #f5bec6;
+	--yellow: #fcc428;
+	--yellowish-white: #fff7e3;
+	--green: #28a411;
+	--greenish-white: #d2fccc;
+	--gray: #526471;
+	--text-red: #df2a43;
+	--text-white: #ffffff;
+	--text-black: #36454f;
+	--text-label: #36454f;
+	--font22: 22px;
+	--font20: 20px;
+	--font18: 18px;
+	--font16: 16px;
+	--font14: 14px;
+	--font12: 12px;
+	--font10: 10px;
+	--font50: 50px;
+	--table-height: 40px;
+	--table-height-2: 45px;
+	--table-height-25: 25px;
+	--navbar-height: 74px;
+	--breadcrumb-height: 86px;
+	--used-height: calc(var(--navbar-height) + var(--breadcrumb-height) + 25px);
+	--layout-menubar-width: 74px;
+	--sidebar-width: 300px;
+	--sidebar-width-extend: calc(var(--sidebar-width) + 100px);
+}
