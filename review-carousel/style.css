@@ -14,10 +14,14 @@ p {
 	align-items: center;
 	background-color: var(--bluish-white);
 }
+#main .review-heading {
+	border-bottom: 5px solid var(--blue);
+}
 #main .content-body {
 	min-width: calc(100% - 30%);
 	max-width: calc(100% - 30%);
 	min-height: calc(100vh - var(--used-height) - 65px);
+	margin-top: 60px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -69,7 +73,7 @@ p {
 	color: white;
 }
 
-#main .content-body .button-group .round {
+#main .content-body .button-group #round {
 	border-radius: 50%;
 }
 
