@@ -6,20 +6,22 @@ document.querySelector('.button-group').addEventListener('click', (event) => {
     let currentButton = event.target.className;
     if (currentButton == 'next') {
         index++;
-        console.log(event.target.className);
-        if (index > image.length) {
+        if (index == image.length) {
             index = 0;
         }
+        let path = images / image[index].jpg;
+        let name = document.getElementsByTagName('img').src = '';
+        console.log('index', path);
+        console.log('image', image[index]);
 
-        console.log(image[index]);
+
     } else {
         index--;
         if (index < 0) {
-            index = image.length;
+            index = image.length - 1;
         }
-        console.log(event.target.className);
-
-        console.log(image[index]);
+        console.log('index', index);
+        console.log('image', image[index]);
     }
 
 
